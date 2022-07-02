@@ -23,3 +23,5 @@ go.work
 go-commerce
 
 .idea/
+
+go.sum

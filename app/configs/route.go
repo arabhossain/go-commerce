@@ -1,4 +1,4 @@
-package router
+package configs
 
 import (
 	"github.com/gorilla/mux"

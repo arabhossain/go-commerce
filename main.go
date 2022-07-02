@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/joho/godotenv"
 	"go-commerce/app/configs"
-	"go-commerce/app/router"
 	"go-commerce/app/utils"
 	"net"
 )
@@ -20,7 +19,7 @@ func main() {
 
 	srv := utils.GetServer().
 		WithAddr(app.Cfg.GetAPIPort()).
-		WithRouter(router.SetupRouter()).
+		WithRouter(configs.SetupRouter()).
 		WithErrLogger(utils.Error)
 
 
@@ -53,6 +52,6 @@ func GetLocalIP() string {
 			}
 		}
 	}
-	return ""
+	return "localhost"
 }
 

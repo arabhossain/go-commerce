@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if err := godotenv.Load(); err != nil {
-		utils.Info.Println("failed to load env vars")d
+		utils.Info.Println("failed to load env vars")
 	}
 
 	app, err := configs.GetInstance()
